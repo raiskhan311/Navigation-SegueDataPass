@@ -12,6 +12,9 @@
 		04CB6C7C1F0A521400E2D867 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CB6C7A1F0A521400E2D867 /* Main.storyboard */; };
 		04CB6C7E1F0A521400E2D867 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CB6C7D1F0A521400E2D867 /* Assets.xcassets */; };
 		04CB6C811F0A521400E2D867 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CB6C7F1F0A521400E2D867 /* LaunchScreen.storyboard */; };
+		04CB6C891F0A522800E2D867 /* VC2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CB6C881F0A522800E2D867 /* VC2.storyboard */; };
+		04CB6C8B1F0A523500E2D867 /* VC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB6C8A1F0A523500E2D867 /* VC2.swift */; };
+		04CB6C8D1F0A557500E2D867 /* VC3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB6C8C1F0A557500E2D867 /* VC3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		04CB6C7D1F0A521400E2D867 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04CB6C801F0A521400E2D867 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04CB6C821F0A521400E2D867 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04CB6C881F0A522800E2D867 /* VC2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = VC2.storyboard; sourceTree = "<group>"; };
+		04CB6C8A1F0A523500E2D867 /* VC2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VC2.swift; sourceTree = "<group>"; };
+		04CB6C8C1F0A557500E2D867 /* VC3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VC3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,41 @@
 		04CB6C751F0A521400E2D867 /* NavigationDemo */ = {
 			isa = PBXGroup;
 			children = (
-				04CB6C761F0A521400E2D867 /* AppDelegate.swift */,
-				04CB6C781F0A521400E2D867 /* ViewController.swift */,
-				04CB6C7A1F0A521400E2D867 /* Main.storyboard */,
+				04CB6C901F0A679F00E2D867 /* Supporting */,
+				04CB6C8F1F0A672E00E2D867 /* RootVC */,
+				04CB6C8E1F0A671500E2D867 /* SecondVC */,
 				04CB6C7D1F0A521400E2D867 /* Assets.xcassets */,
+			);
+			path = NavigationDemo;
+			sourceTree = "<group>";
+		};
+		04CB6C8E1F0A671500E2D867 /* SecondVC */ = {
+			isa = PBXGroup;
+			children = (
+				04CB6C881F0A522800E2D867 /* VC2.storyboard */,
+				04CB6C8A1F0A523500E2D867 /* VC2.swift */,
+				04CB6C8C1F0A557500E2D867 /* VC3.swift */,
+			);
+			name = SecondVC;
+			sourceTree = "<group>";
+		};
+		04CB6C8F1F0A672E00E2D867 /* RootVC */ = {
+			isa = PBXGroup;
+			children = (
+				04CB6C7A1F0A521400E2D867 /* Main.storyboard */,
+				04CB6C781F0A521400E2D867 /* ViewController.swift */,
+			);
+			name = RootVC;
+			sourceTree = "<group>";
+		};
+		04CB6C901F0A679F00E2D867 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				04CB6C761F0A521400E2D867 /* AppDelegate.swift */,
 				04CB6C7F1F0A521400E2D867 /* LaunchScreen.storyboard */,
 				04CB6C821F0A521400E2D867 /* Info.plist */,
 			);
-			path = NavigationDemo;
+			name = Supporting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +156,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04CB6C891F0A522800E2D867 /* VC2.storyboard in Resources */,
 				04CB6C811F0A521400E2D867 /* LaunchScreen.storyboard in Resources */,
 				04CB6C7E1F0A521400E2D867 /* Assets.xcassets in Resources */,
 				04CB6C7C1F0A521400E2D867 /* Main.storyboard in Resources */,
@@ -136,6 +170,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04CB6C8D1F0A557500E2D867 /* VC3.swift in Sources */,
+				04CB6C8B1F0A523500E2D867 /* VC2.swift in Sources */,
 				04CB6C791F0A521400E2D867 /* ViewController.swift in Sources */,
 				04CB6C771F0A521400E2D867 /* AppDelegate.swift in Sources */,
 			);

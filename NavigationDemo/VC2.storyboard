@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5gp-91-V00">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--VC2-->
+        <scene sceneID="8KC-l2-OWi">
+            <objects>
+                <viewController storyboardIdentifier="VC2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4GM-6I-emW" customClass="VC2" customModule="NavigationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hSF-YH-9b9"/>
+                        <viewControllerLayoutGuide type="bottom" id="WmE-Dw-axi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="F2Y-AW-DZh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="koy-C3-FAT">
+                                <rect key="frame" x="16" y="323" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="VC2" id="Qdj-yr-exH">
+                        <barButtonItem key="leftBarButtonItem" title="Exit" id="5Uq-eA-OU5">
+                            <connections>
+                                <segue destination="q75-Ve-NDQ" kind="unwind" unwindAction="unseguActionWithSff:" id="iL3-ff-acf"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="4Ep-YH-FFV">
+                            <connections>
+                                <action selector="btn_next:" destination="4GM-6I-emW" id="aeq-RS-neC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="lbl_showmsg" destination="koy-C3-FAT" id="RqF-2v-ZbW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GUZ-fP-htj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="q75-Ve-NDQ" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1383.2" y="-360.2698650674663"/>
+        </scene>
+        <!--VC3-->
+        <scene sceneID="NB2-JL-JvU">
+            <objects>
+                <viewController storyboardIdentifier="VC3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jAx-0I-IJU" customClass="VC3" customModule="NavigationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vCS-Bv-FPI"/>
+                        <viewControllerLayoutGuide type="bottom" id="M3w-Au-05q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="V64-5H-vJk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2v-iX-zaI">
+                                <rect key="frame" x="16" y="323" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="lbl_showmessage" destination="M2v-iX-zaI" id="PdH-sO-MC4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DJ4-Ek-1gl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2193" y="-360"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dsj-Ve-aL8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5gp-91-V00" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xxa-fa-kJw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4GM-6I-emW" kind="relationship" relationship="rootViewController" id="Sva-0I-0tj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lTq-Mx-6w1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="444" y="-360.2698650674663"/>
+        </scene>
+    </scenes>
+</document>
